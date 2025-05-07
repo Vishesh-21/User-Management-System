@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "generate": "prisma generate",
     "dev": "ts-node-dev src/index.ts",
-    "build": "prisma generate && tsc",
+    "build": "tsc", 
     "start": "node build/index.js"
   },
   "keywords": [],
